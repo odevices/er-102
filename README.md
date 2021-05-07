@@ -1,1 +1,1 @@
-# er-102
+# ER-102 Sequencer Controller
