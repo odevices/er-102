@@ -130,45 +130,45 @@
 # v1.04
 (Warning:  This firmware upgrade will try to convert your v1.02 snapshots to v1.04 snapshots.  However, there is an issue with the conversion process which will corrupt your snapshots.  Please backup your snapshots to your computer and delete the SNAPSHOT directory on your SD card before using the v1.04 firmware.)
 * NEW: Improved Snapshots
- * "Focus press" the SNAPSHOT button to get the snapshot description screen where you can use all of the ER-101/102 displays to write your own description/mnemonic for the snapshot.
- * Revision numbers (see the VOLTAGE display when in snapshot description screen).  Snapshots are no longer overwritten when saving.  Instead a new revision is always created and the revision number is incremented.  Recall an earlier version of any snapshot by focusing the revision number, changing it with the RIGHT knob and pressing the LOAD button.
- * A small dot in the SNAPSHOT display indicates whether the slot has a snapshot or not.
- * When updating your firmware, snapshots on your SD card from the previous firmware are automatically converted to the new version.
+  * "Focus press" the SNAPSHOT button to get the snapshot description screen where you can use all of the ER-101/102 displays to write your own description/mnemonic for the snapshot.
+  * Revision numbers (see the VOLTAGE display when in snapshot description screen).  Snapshots are no longer overwritten when saving.  Instead a new revision is always created and the revision number is incremented.  Recall an earlier version of any snapshot by focusing the revision number, changing it with the RIGHT knob and pressing the LOAD button.
+  * A small dot in the SNAPSHOT display indicates whether the slot has a snapshot or not.
+  * When updating your firmware, snapshots on your SD card from the previous firmware are automatically converted to the new version.
 * NEW: User Voltage tables are now Files 
- * User Voltage tables now live on the SD card.
- * Add as many as you want, just drop a voltage table file into the the ER-102/TABLES directory on  your SD card.
- * Voltage table filenames should be 4 characters long.  These names are shown in the VOLTAGE display when browsing.
- * File format is a simple binary of 100 16-bit (unsigned) integers. Easily creatable from many different scripting languages.
+  * User Voltage tables now live on the SD card.
+  * Add as many as you want, just drop a voltage table file into the the ER-102/TABLES directory on  your SD card.
+  * Voltage table filenames should be 4 characters long.  These names are shown in the VOLTAGE display when browsing.
+  * File format is a simple binary of 100 16-bit (unsigned) integers. Easily creatable from many different scripting languages.
 * NEW: Real-time Recording Options
- * Record Focus: In the real-time recording configuration screen, you can set recording to insert after the current step, current pattern, to the end of the track.
- * Assign-to-Part: enable this config file option to have newly recorded material assigned automatically to a part.
- * Wait-for-first-Note:  enable this config file option to have the ER-102 wait for the first note before inserting a step.
+  * Record Focus: In the real-time recording configuration screen, you can set recording to insert after the current step, current pattern, to the end of the track.
+  * Assign-to-Part: enable this config file option to have newly recorded material assigned automatically to a part.
+  * Wait-for-first-Note:  enable this config file option to have the ER-102 wait for the first note before inserting a step.
 * NEW: CONFIG.INI the Configuration File
- * A file called CONFIG.INI will be created in the ER-102 directory of your SD card on first time loading the new firmware.
- * Contains lots of options for customizing the ER-102 to your taste.
- * More options can be easily added according to user's requests without affecting other user's experience.
+  * A file called CONFIG.INI will be created in the ER-102 directory of your SD card on first time loading the new firmware.
+  * Contains lots of options for customizing the ER-102 to your taste.
+  * More options can be easily added according to user's requests without affecting other user's experience.
 * NEW: Simultaneous Clock Divide and Multiply
- * Now you can divide the clock as well as multiply the clock.
- * Generate clocks that just multiply or just divide cannot achieve, such as 2/3 or 5/7 of the original clock.
- * "Focus press" the TRACK button to get to the track configuration screen and adjust the divider and multiplier amounts.
+  * Now you can divide the clock as well as multiply the clock.
+  * Generate clocks that just multiply or just divide cannot achieve, such as 2/3 or 5/7 of the original clock.
+  * "Focus press" the TRACK button to get to the track configuration screen and adjust the divider and multiplier amounts.
 * NEW: Rotate/Invert Tracks, Patterns, and Parts 
- * Now only the focused parameter is rotated or inverted over the pattern.
- * This means that you can rotate note values but keep the base rhythm (DURATION and GATE) unchanged and vice versa.
+  * Now only the focused parameter is rotated or inverted over the pattern.
+  * This means that you can rotate note values but keep the base rhythm (DURATION and GATE) unchanged and vice versa.
 * NEW: Invert MATH transforms
- * Hold down the INVERT button while applying a MATH transform to apply its inverse.
- * Press and release the INVERT button while in the MATH edit screen to invert the operations of the current transform.
- * Only inverts the Add and Multiply operations while ignoring the Random and Jitter operators since they have no inverse. 
+  * Hold down the INVERT button while applying a MATH transform to apply its inverse.
+  * Press and release the INVERT button while in the MATH edit screen to invert the operations of the current transform.
+  * Only inverts the Add and Multiply operations while ignoring the Random and Jitter operators since they have no inverse. 
 * NEW: Separate external clocks for each track
- * Typically, all tracks receive their clock signal from the CLOCK input on the ER-101 (aka global).  However, you can also have any track receive its clock from one of the GATE mod inputs (X, Y, and Z).
- * See the config file for instructions on how to setup the clock routing and enable this behavior.
+  * Typically, all tracks receive their clock signal from the CLOCK input on the ER-101 (aka global).  However, you can also have any track receive its clock from one of the GATE mod inputs (X, Y, and Z).
+  * See the config file for instructions on how to setup the clock routing and enable this behavior.
 * NEW: Load MIDI files
- * Type 0 and 1 files are supported.
- * MIDI channels 1-4 are mapped to tracks 1-4, other channels are ignored.
- * Configuration options for transpose and MIDI clock divide are available in the config.ini.
+  * Type 0 and 1 files are supported.
+  * MIDI channels 1-4 are mapped to tracks 1-4, other channels are ignored.
+  * Configuration options for transpose and MIDI clock divide are available in the config.ini.
 * NEW: ADMIN mode
- * Activated when the STORAGE switch is in ADMIN mode. 
- * Press the RESET button on the ER-101 to soft reset the ER-102.
- * Otherwise not really useful for users (yet) but I wanted to tell you about it so that you are not confused by it.
+  * Activated when the STORAGE switch is in ADMIN mode. 
+  * Press the RESET button on the ER-101 to soft reset the ER-102.
+  * Otherwise not really useful for users (yet) but I wanted to tell you about it so that you are not confused by it.
 * NEW: Allow edits in FOLLOW mode if paused or active part is the STOP part, or there is no clock.
 * NEW:  JITTER and RANDOM operators for GROUP non-destructive transforms!
 * NEW:  MATH edit screen behavior changes slightly: After PINning the edit screen you can apply the transform by pressing the MATH button (used to exit the edit screen). To exit: press the VOLTAGE button (DONE is flashing in the VOLTAGE display).
