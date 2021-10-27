@@ -1,10 +1,14 @@
 # Chromatic Scales for the ER-102
 
+Execute the script using Pythong v2.x like this:
+
 ```bash
 python2 generate.py
 ```
 
-The chromatic/generate.py script generates the following scales:
+This will create many XXXX-P.BIN files where the XXXX is the name shown on the 4-character display of the ER-102.  The ```-P``` tells the ER-102 that these are pitch tables (as opposed to just voltage tables).
+
+Here is the list of scales currently created by the script:
 
 * Chro : Chromatic [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 * Majo : Major [0, 0, 2, 2, 4, 5, 5, 7, 7, 9, 9, 11]
