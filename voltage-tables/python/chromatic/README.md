@@ -1,12 +1,12 @@
 # Chromatic Scales for the ER-102
 
-Execute the script using Pythong v2.x like this:
+Execute the script using Python v2.x like this:
 
 ```bash
 python2 generate.py
 ```
 
-This will create many XXXX-P.BIN files where the XXXX is the name shown on the 4-character display of the ER-102.  The ```-P``` tells the ER-102 that these are pitch tables (as opposed to just voltage tables).
+This will create many XXXX-P.BIN files where XXXX is a (shortened) name for the 4-character display of the ER-102.  The ```-P``` tells the ER-102 that these are pitch tables (as opposed to just voltage tables).
 
 Here is the list of scales currently created by the script:
 
