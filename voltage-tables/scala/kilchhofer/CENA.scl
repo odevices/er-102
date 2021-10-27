@@ -1,0 +1,23 @@
+!Centaur_06b_08a.scl
+!
+Centaur_06b_08a
+6
+!
+7/6
+3/2
+14/9
+5/3
+7/4
+2/1
+! Created with the iOS app "Wilsonic" by Marcus Hobbs
+!
+! The 1/1 is explicitly added by the Scala tuning file format
+! For Centaur subsets whose first term is not 1/1 we normalize
+! 0.000000 ==> (scaleDegree: 2, CentaurMicrotone: MicrotoneRational:9/8, shortDesc: 9/8, f:1.125, P:0.1699250042438507/scaleDegree: 2, CentaurMicrotone: MicrotoneRational:9/8, shortDesc: 9/8, f:1.125, P:0.1699250042438507) ==> Microtone: MicrotoneRational:72/72, shortDesc: 72/72, f:1, P:0
+! 62.960869 ==> (scaleDegree: 3, CentaurMicrotone: MicrotoneRational:7/6, shortDesc: 7/6, f:1.166666666666667, P:0.2223923653364182/scaleDegree: 2, CentaurMicrotone: MicrotoneRational:9/8, shortDesc: 9/8, f:1.125, P:0.1699250042438507) ==> Microtone: MicrotoneRational:28/27, shortDesc: 28/27, f:1.037037037037037, P:0.05246739089488983
+! 498.045051 ==> (scaleDegree: 7, CentaurMicrotone: MicrotoneRational:3/2, shortDesc: 3/2, f:1.5, P:0.5849624872207642/scaleDegree: 2, CentaurMicrotone: MicrotoneRational:9/8, shortDesc: 9/8, f:1.125, P:0.1699250042438507) ==> Microtone: MicrotoneRational:4/3, shortDesc: 4/3, f:1.333333333333333, P:0.4150375425815582
+! 561.005902 ==> (scaleDegree: 8, CentaurMicrotone: MicrotoneRational:14/9, shortDesc: 14/9, f:1.555555555555556, P:0.63742995262146/scaleDegree: 2, CentaurMicrotone: MicrotoneRational:9/8, shortDesc: 9/8, f:1.125, P:0.1699250042438507) ==> Microtone: MicrotoneRational:112/81, shortDesc: 112/81, f:1.382716049382716, P:0.4675049185752869
+! 680.448675 ==> (scaleDegree: 9, CentaurMicrotone: MicrotoneRational:5/3, shortDesc: 5/3, f:1.666666666666667, P:0.736965537071228/scaleDegree: 2, CentaurMicrotone: MicrotoneRational:9/8, shortDesc: 9/8, f:1.125, P:0.1699250042438507) ==> Microtone: MicrotoneRational:40/27, shortDesc: 40/27, f:1.481481481481481, P:0.5670405626296997
+! 764.915943 ==> (scaleDegree: 10, CentaurMicrotone: MicrotoneRational:7/4, shortDesc: 7/4, f:1.75, P:0.8073549270629883/scaleDegree: 2, CentaurMicrotone: MicrotoneRational:9/8, shortDesc: 9/8, f:1.125, P:0.1699250042438507) ==> Microtone: MicrotoneRational:14/9, shortDesc: 14/9, f:1.555555555555556, P:0.63742995262146
+
+! Please see the Scala archives at: http://www.huygens-fokker.org/docs/scalesdir.txt

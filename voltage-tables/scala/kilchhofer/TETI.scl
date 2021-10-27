@@ -1,0 +1,19 @@
+!tetrany_3_4__3_5_7_9.scl
+!
+Tetrany (3,4) (3,5,7,9)
+4
+!
+266.870901
+582.512221
+764.915881
+2/1
+! Created with the iOS app "Wilsonic" by Marcus Hobbs
+!
+! The 1/1 is explicitly added by the Scala tuning file format
+! There is no 1/1 in a Tetrany (Minor), so we normalize by the first term
+! 0.000000 ==> (3*5*9/3*5*9) ==> 1.05
+! 266.870901 ==> (5*7*9/3*5*9) ==> 1.23
+! 582.512221 ==> (3*7*9/3*5*9) ==> 1.47
+! 764.915881 ==> (3*5*7/3*5*9) ==> 1.64
+
+! Please see the Scala archives at: http://www.huygens-fokker.org/docs/scalesdir.txt

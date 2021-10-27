@@ -1,0 +1,21 @@
+!Centaur_Harmonic_Series_On_C.scl
+!
+Centaur_Harmonic_Series_On_C
+5
+!
+9/8
+5/4
+3/2
+7/4
+2/1
+! Created with the iOS app "Wilsonic" by Marcus Hobbs
+!
+! The 1/1 is explicitly added by the Scala tuning file format
+! For Centaur subsets whose first term is not 1/1 we normalize
+! 0.000000 ==> (scaleDegree: 0, CentaurMicrotone: MicrotoneRational:1/1, shortDesc: 1/1, f:1, P:0/scaleDegree: 0, CentaurMicrotone: MicrotoneRational:1/1, shortDesc: 1/1, f:1, P:0) ==> Microtone: MicrotoneRational:1/1, shortDesc: 1/1, f:1, P:0
+! 203.910005 ==> (scaleDegree: 2, CentaurMicrotone: MicrotoneRational:9/8, shortDesc: 9/8, f:1.125, P:0.1699250042438507/scaleDegree: 0, CentaurMicrotone: MicrotoneRational:1/1, shortDesc: 1/1, f:1, P:0) ==> Microtone: MicrotoneRational:9/8, shortDesc: 9/8, f:1.125, P:0.1699250042438507
+! 386.313701 ==> (scaleDegree: 4, CentaurMicrotone: MicrotoneRational:5/4, shortDesc: 5/4, f:1.25, P:0.321928083896637/scaleDegree: 0, CentaurMicrotone: MicrotoneRational:1/1, shortDesc: 1/1, f:1, P:0) ==> Microtone: MicrotoneRational:5/4, shortDesc: 5/4, f:1.25, P:0.321928083896637
+! 701.954985 ==> (scaleDegree: 7, CentaurMicrotone: MicrotoneRational:3/2, shortDesc: 3/2, f:1.5, P:0.5849624872207642/scaleDegree: 0, CentaurMicrotone: MicrotoneRational:1/1, shortDesc: 1/1, f:1, P:0) ==> Microtone: MicrotoneRational:3/2, shortDesc: 3/2, f:1.5, P:0.5849624872207642
+! 968.825912 ==> (scaleDegree: 10, CentaurMicrotone: MicrotoneRational:7/4, shortDesc: 7/4, f:1.75, P:0.8073549270629883/scaleDegree: 0, CentaurMicrotone: MicrotoneRational:1/1, shortDesc: 1/1, f:1, P:0) ==> Microtone: MicrotoneRational:7/4, shortDesc: 7/4, f:1.75, P:0.8073549270629883
+
+! Please see the Scala archives at: http://www.huygens-fokker.org/docs/scalesdir.txt

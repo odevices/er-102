@@ -1,0 +1,23 @@
+!hexany_3_5_7_9.scl
+!
+Hexany (3,5,7,9)
+6
+!
+315.641284
+435.084093
+750.725412
+933.129072
+1017.596269
+2/1
+! Created with the iOS app "Wilsonic" by Marcus Hobbs
+!
+! The 1/1 is explicitly added by the Scala tuning file format
+! There is no 1/1 in a Tetrany (Minor), so we normalize by the first term
+! 0.000000 ==> (5*7/5*7) ==> 1.09
+! 315.641284 ==> (3*7/5*7) ==> 1.31
+! 435.084093 ==> (5*9/5*7) ==> 1.40
+! 750.725412 ==> (3*9/5*7) ==> 1.68
+! 933.129072 ==> (3*5/5*7) ==> 1.87
+! 1017.596269 ==> (7*9/5*7) ==> 1.96
+
+! Please see the Scala archives at: http://www.huygens-fokker.org/docs/scalesdir.txt
