@@ -85,8 +85,7 @@ for item in input_data.split('\n'):
     scale_name = scale[0]
     scale_degrees = [int(x) for x in scale[1].split(',')]
     scale_short_name = abbreviate(scale_name)
-    print scale_name, "-->", scale_short_name
-    print scale_degrees
+    print scale_short_name, ":", scale_name, scale_degrees
     table = chromatic_to_voltage_table(scale_degrees)
     # Write the binary array out to a binary file.
     # Note: The '-P' at the end of the filename indicates a pitched table and thus voltages
