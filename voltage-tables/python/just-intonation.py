@@ -7,7 +7,7 @@ import ctypes
 ###################################
 # Fill in these parameters
 # the prime denominators to use to generate the ratios
-denoms = [2,3,5,7]
+denoms = [2, 3, 5, 7]
 # the name of this table, sets the filename and display name
 name = "JUI7"
 # the drive letter assigned to your mounted SD card
@@ -17,36 +17,34 @@ drive = "I:/"
 # calculations
 code_per_octave = 8000
 max_code = 0xFFFF
-nout = 100 
+nout = 100
 ratios = []
 
 # iterate over each octave, appending new ratios as we go...
-print "Generating 10 octaves of ratios using %s:"%str(denoms)
+print(f"Generating 10 octaves of ratios using {denoms}:")
 for octave in range(10):
-    ratios.append(octave)
-    # generate all possible ratios using the current denominator
-    for d in denoms:
-        for n in range(1,d):
-            r = octave+(1.0*n)/d
-            print "%d/%d = %f"%(n,d,r)
-            ratios.append(r)
+  ratios.append(float(octave))
+  # generate all possible ratios using the current denominator
+  for d in denoms:
+    for n in range(1, d):
+      r = float(octave) + float(n) / d
+      print(f"{n}/{d} = {r}")
+      ratios.append(r)
 
 # sort the ratios into an increasing order
 ratios.sort()
-#print ratios
+# print ratios
 
-print "************************************"
+print("************************************")
 
 # output to a binary file of 16-bit unsigned integers
-filename = os.path.join(drive,"ER-102","TABLES",name+".BIN")
-codes = [ int(code_per_octave * x) for x in ratios[:nout]]
-codes = [ x if x<max_code else max_code for x in codes]
-print "Outputting the following %d codes to %s:"%(len(codes),filename)
-print codes
+filename = os.path.join(drive, "ER-102", "TABLES", name + ".BIN")
+codes = [int(code_per_octave * x) for x in ratios[:nout]]
+codes = [x if x < max_code else max_code for x in codes]
+print(f"Outputting the following {len(codes)} codes to {filename}:")
+print(codes)
 data = (ctypes.c_uint16 * len(codes))(*codes)
-with open(filename,"wb") as f:
-    f.write(data)
-    f.close()
-print "Done!"
-
-
+with open(filename, "wb") as f:
+  f.write(data)
+  f.close()
+print("Done!")
